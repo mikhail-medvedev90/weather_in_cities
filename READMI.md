@@ -13,7 +13,7 @@ This project demonstrates a simple FastAPI application that fetches weather data
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/fastapi-weather-app.git
+   git clone https://github.com/mikhail-medvedev90/weather_in_cities.git
    cd weather_in_cities
    
 Install dependencies using pip:
