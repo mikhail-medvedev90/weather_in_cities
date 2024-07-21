@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ city }}
+{% endblock %}
+
+{% block content %}
+{% if not error %}
+    <ul>
+        <li>temperature: {{ weather.temperature_2m }}</li>
+        <li>time: {{ weather.time }}</li>
+        <li>interval: {{ weather.interval }}</li>
+        <li>wind_speed: {{ weather.wind_speed_10m }}</li>
+        <li>rain: {{ weather.rain }}</li>
+    </ul>
+{% else %}
+    <p style="color: red">{{ error }}</p>
+{% endif %}
+<button class="home_button"><a href="/index">Back</a></button>
+{% endblock %}
